@@ -9,11 +9,11 @@
         
         <div class="collapse navbar-collapse" id="nav-bar">
             <ul class="navbar-nav mr-auto"></ul>
-            <ul class="navbar-nav">
+            <ul class="nav navbar-nav navbar-light">
                 {{--ユーザー登録ページのリンク--}}
-                <li class="nav-item"><a href="#" class="nav-link">Signup</a></li>
+                <li>{!! link_to_route('signup.get','Signup',[],['class'=>'nav-link']) !!}</li>
                 {{--ログインページへのリンク--}}
-                <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+                <li><a href="#">Login</a></li>
             </ul>
         </div>
     </nav>

@@ -2,8 +2,8 @@
     <ul class="list-unstyled">
         @foreach($users as $user)
             <li class="media">
-                {{--ユーザのメールアドレスを元にGravatorを取得して表示--}}
-                <img class="mr-2 rounded" src="{{ Gravator::get($users->email,['size'=>50]) }}" alt="">
+                {{--ユーザのメールアドレスを元にGravatarを取得して表示--}}
+                <img class="mr-2 rounded" src="{{ Gravatar::get($user->email,['size'=>50]) }}" alt="">
                 <div class="media-body">
                     <div>
                         {{ $user->name }}

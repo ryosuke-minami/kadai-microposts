@@ -39,6 +39,6 @@ class UsersController extends Controller
         return view('users.followers',[
             'user'=>$user,
             'users'=>$followers,
-        ]);        
+        ]);
     }
 }
